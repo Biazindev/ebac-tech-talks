@@ -1,17 +1,23 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variaveis';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    color: variaveis.$textColor;;
+    list-style: none;
 }
-
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
     color: #fff;
+    
 
     @media (max-width: 640px) {
         max-width: 80%;
